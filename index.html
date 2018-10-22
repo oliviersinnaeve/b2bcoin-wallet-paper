@@ -5,18 +5,18 @@
     <title>B2Bcoin (B2B) Paper Wallet Generator</title>
     <meta name="keywords" content="B2Bcoin, B2B, paper wallet, generator, paperwallet">
     <meta name="description" content="Generate a recoverable B2Bcoin [B2B] paper wallet">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/bootstrap.min.css"
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css"
           integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="./css/all.css">
     <!--Favicons-->
-    <link rel="shortcut icon" href="/media/symbol_32x32.png" type="image/png">
+    <link rel="shortcut icon" href="./media/symbol_32x32.png" type="image/png">
 
     <script src="/js/jquery.min.js"></script>
 </head>
 <body onload="js:genwallet(null)">
 <div class="wallet">
-    <img id="theme-image" src="/themes/themeB2Bstandard.png">
+    <img id="theme-image" src="./themes/themeB2Bstandard.png">
     <div class="gui-text">GUI key</div>
     <div class="mnemonic-text" id="mnemonic_widget"></div>
     <div class="cli-text">CLI key</div>
@@ -40,7 +40,7 @@
     <div class="logo-text">
         <ul>
             <div class="logo">
-                <img class="logo" src="/media/logo.png">
+                <img class="logo" src="./media/logo.png">
             </div>
             <li>
                 <b>B2Bcoin</b>
@@ -52,18 +52,18 @@
     <button type="button" onclick="js:genwallet(null)">Generate new</button>
     <button type="button" onclick="window.print()">Print</button>
     <select onchange="$('#theme-image').attr('src', this.options[this.selectedIndex].value);">
-        <option value="/themes/themeB2Bstandard.png" selected>B2B Standard</option>
-        <option value="/themes/themeB2Blight.png">B2B Light</option>
+        <option value="./themes/themeB2Bstandard.png" selected>B2B Standard</option>
+        <option value="./themes/themeB2Blight.png">B2B Light</option>
     </select>
 </div>
 <div class="instruction">
-    <img id="instr" src="/media/instructions.png">
+    <img id="instr" src="./media/instructions.png">
 </div>
 
-<script src="/js/qrcode.js"></script>
-<script type="text/javascript" src="/js/iframe-buster.js"></script>
-<script type="text/javascript" src="/js/crypto_utils.js"></script>
-<script type="text/javascript" src="/js/wallet.js"></script>
+<script type="text/javascript" src="./js/qrcode.js"></script>
+<script type="text/javascript" src="./js/iframe-buster.js"></script>
+<script type="text/javascript" src="./js/crypto_utils.js"></script>
+<script type="text/javascript" src="./js/wallet.js"></script>
 
 <footer>
     <div class="b2blinks">

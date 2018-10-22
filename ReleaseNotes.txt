@@ -1,0 +1,5 @@
+Release notes 2.0.1 - (22-Oct-2018)
+- Added B2Bcoin links
+
+Release notes 2.0.0 - (22-Oct-2018)
+- First release of the new B2Bcoin Paper Wallet 2

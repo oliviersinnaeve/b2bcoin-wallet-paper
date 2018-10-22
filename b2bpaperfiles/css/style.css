@@ -1,0 +1,286 @@
+body {
+  font-family: 'SF UI Display Medium',sans-serif;
+  font-weight: 400;
+  overflow-y: scroll;
+  margin: 0;
+}
+
+.wallet {
+  width: 1000px;
+  height: 424px;
+  margin: 60px auto 20px auto;
+  position: relative;
+  border: 1px dotted #000000;
+}
+
+.wallet img, .instruction img {
+  width: 100%;
+}
+
+.instruction {
+  width: 1000px;
+  height: 172px;
+  margin: 60px auto 20px auto;
+  position: relative;
+  border: 2px dotted #086788;
+}
+
+.address_widget {
+  position: absolute;
+  top: 290px;
+  right: 490px;
+  width: 130px;
+  height: 60px;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  word-wrap: break-word;
+}
+
+.qr-address {
+  position: absolute;
+  top: 273px;
+  right: 432px;
+  height: 50px;
+}
+
+.gui_key_widget {
+  position: absolute;
+  top: 75px;
+  right: 65px;
+  width: 130px;
+  height: 60px;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  word-wrap: break-word;
+}
+
+.instruction-text {
+  position: absolute;
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  left: 25px;
+  top: -120px;
+  width: 330px;
+  height: 165px;
+  font-size: 10px;
+  color: #193039;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.instruction-text ul {
+  list-style: none;
+}
+
+.instruction-text ul li {
+  margin-bottom: 5px;
+}
+
+.instruction-text a {
+  color: #368A98;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 100px;
+  width: auto;
+}
+
+.logo-text {
+  position: absolute;
+  text-align: center;
+  left: 20px;
+  top: 222px;
+  width: 260px;
+  height: 165px;
+  font-size: 32px;
+  color: #086788;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.logo-text ul {
+  list-style: none;
+}
+
+.logo-text ul li {
+  margin-bottom: 5px;
+}
+
+.gui-text, .cli-text, .mnemonic-text {
+  position: absolute;
+  height: 20px;
+  font-size: 10px;
+  color: #086788;
+  font-weight: 500;
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  text-transform: uppercase;
+}
+
+.gui-text {
+  font-size: 16px;
+  left: 181px;
+  top: 175px;
+  width: 100px;
+}
+
+.gui-text-big {
+  position: absolute;
+  color: #086788;
+  font-size: 30px;
+  right: 2px;
+  top: 91px;
+  width: 125px;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  text-transform: uppercase;
+}
+
+.cli-text-big {
+  position: absolute;
+  color: #086788;
+  font-size: 30px;
+  right: 335px;
+  top: 92px;
+  width: 125px;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  text-transform: uppercase;
+}
+
+.address-text-big {
+  position: absolute;
+  color: #086788;
+  font-size: 30px;
+  right: 292px;
+  top: 285px;
+  width: 175px;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cli-text {
+  font-size: 16px;
+  left: 13px;
+  top: 175px;
+  width: 100px;
+}
+
+.mnemonic-text {
+  left: 425px;
+  top: 125px;
+  width: 200px;
+}
+
+.cli_key_widget {
+  position: absolute;
+  font-size: 11px;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  font-size: 11px;
+  word-wrap: break-word;
+  white-space: pre-line;
+  letter-spacing: 0.08em;
+  left: 472px;
+  top: 75px;
+  width: 130px;
+  height: 60px;
+}
+
+.qr-cli {
+  position: absolute;
+  top: 42px;
+  left: 20px;
+}
+
+.qr-gui {
+  position: absolute;
+  top: 42px;
+  left: 185px;
+}
+
+.qr-gui img, .qr-cli img {
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.qr-address img {
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.buttons {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+button {
+  background-color: none;
+  color: #086788;
+  padding: 10px 30px;
+  margin: 0 10px;
+  transition: all 0.4s; 
+  border: 1px solid #086788;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 4px #086788;
+  -moz-box-shadow: 0px 0px 4px #086788;
+  box-shadow: 0px 0px 4px #086788;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'SF UI Display Medium',sans-serif;
+  font-weight: 400;
+}
+
+button:hover {
+  background-color: #38aecc;
+  color: #ffffff;
+}
+
+footer {
+  text-align: center;
+}
+
+.b2blinks a:link {
+  color: #38aecc;
+}
+.b2blinks a:visited {
+  color: #086788;
+}
+.b2blinks a:hover {
+  color: #08bdbd;
+}
+@media print {
+  body {
+    background-image: none;
+    height: 650px;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  .buttons {
+    display: none;
+  }
+  .wallet, .instruction {
+    margin-left:12px;
+  }
+
+}

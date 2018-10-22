@@ -273,6 +273,9 @@ footer {
 .b2blinks a:hover {
   color: #08bdbd;
 }
+.themeDropdown {
+  color:#086788 !important;
+}
 @media print {
   body {
     background-image: none;

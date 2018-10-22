@@ -49,10 +49,10 @@
   <div class="buttons">
     <button type="button" onclick="js:genwallet(null)">Generate new</button>
     <button type="button" onclick="window.print()">Print</button>
-    <select onchange="$('#theme-image').attr('src', this.options[this.selectedIndex].value);$('#address-text-big, #gui-text-big, #cli-text-big, #instruction-text, #logo-text, #gui-text, #cli-text').css(this.options[this.selectedIndex].style);">
-      <option value="b2bpaperfiles/themes/themeB2Bstandard.png" selected>B2B Standard</option>
-      <option value="b2bpaperfiles/themes/themeB2Blight.png">B2B Light</option>
-      <option value="b2bpaperfiles/themes/themeB2Bdark.png" style="color:#ffffff">B2B Dark</option>
+    <select class="themeDropdown" onchange="$('#theme-image').attr('src', this.options[this.selectedIndex].value);$('#address-text-big, #gui-text-big, #cli-text-big, #instruction-text, #logo-text, #gui-text, #cli-text').css(this.options[this.selectedIndex].style);">
+      <option value="b2bpaperfiles/themes/themeB2Bstandard.png" class="themeDropdown" selected>B2B Standard</option>
+      <option value="b2bpaperfiles/themes/themeB2Blight.png" class="themeDropdown">B2B Light</option>
+      <option value="b2bpaperfiles/themes/themeB2Bdark.png" style="color:#ffffff" class="themeDropdown">B2B Dark</option>
     </select>
   </div>
   <div class="instruction">
@@ -73,7 +73,7 @@
     <a href="https://www.facebook.com/b2beyond/" class="fab fa-facebook fa-3x" style="text-decoration:none" target="_blank" title="Facebook"></a>
   </div>
   <p>
-    B2Bcoin Paper Wallet v2.0.2
+    B2Bcoin Paper Wallet v2.0.3
   </p>
 </footer>
 </body>

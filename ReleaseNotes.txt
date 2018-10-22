@@ -1,3 +1,7 @@
+Release notes 2.0.2 - (22-Oct-2018)
+- Added new B2B Dark theme
+- Font color can be changed based on theme
+
 Release notes 2.0.1 - (22-Oct-2018)
 - Added B2Bcoin links
 

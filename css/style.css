@@ -276,7 +276,7 @@ footer {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
   }
-  .buttons {
+  .buttons, .b2blinks {
     display: none;
   }
   .wallet, .instruction {

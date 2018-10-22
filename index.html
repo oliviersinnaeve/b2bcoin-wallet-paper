@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>B2Bcoin (B2B) Paper Wallet Generator</title>
-<meta name="keywords" content="B2Bcoin, B2B, paper wallet, generator, paperwallet">
-<meta name="description" content="Generate a recoverable B2Bcoin [B2B] paper wallet">  
-<link rel="stylesheet" href="./b2bpaperfiles/css/style.css">
-<link rel="stylesheet" href="./b2bpaperfiles/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-<link rel="stylesheet" href="./b2bpaperfiles/css/all.css">
-<!--Favicons-->
-<link rel="shortcut icon" href="./b2bpaperfiles/media/symbol_32x32.png" type="image/png">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>B2Bcoin (B2B) Paper Wallet Generator</title>
+    <meta name="keywords" content="B2Bcoin, B2B, paper wallet, generator, paperwallet">
+    <meta name="description" content="Generate a recoverable B2Bcoin [B2B] paper wallet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css"
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/all.css">
+    <!--Favicons-->
+    <link rel="shortcut icon" href="/media/symbol_32x32.png" type="image/png">
 
-<script src="./b2bpaperfiles/js/jquery.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
 </head>
 <body onload="js:genwallet(null)">
-  <div class="wallet">
-    <img id="theme-image" src="./b2bpaperfiles/themes/themeB2Bstandard.png">
+<div class="wallet">
+    <img id="theme-image" src="/themes/themeB2Bstandard.png">
     <div class="gui-text">GUI key</div>
-        <div class="mnemonic-text" id="mnemonic_widget"></div>
+    <div class="mnemonic-text" id="mnemonic_widget"></div>
     <div class="cli-text">CLI key</div>
     <div class="instruction-text">
-      <ul>
-        <li>
-          <b>DO NOT REVEAL THE KEYS</b> until you are ready to import the balance of this wallet to a B2Bcoin GUI or CLI wallet.
-        </li>
-      </ul>
+        <ul>
+            <li>
+                <b>DO NOT REVEAL THE KEYS</b> until you are ready to import the balance of this wallet to a B2Bcoin GUI
+                or CLI wallet.
+            </li>
+        </ul>
     </div>
     <div class="gui-text-big">GUI key</div>
     <div class="cli-text-big">CLI key</div>
@@ -36,44 +38,49 @@
     <div id="cli_key_widget" class="cli_key_widget"></div>
     <div id="qrcodeCLI" class="qr-cli"></div>
     <div class="logo-text">
-      <ul>
-        <div class="logo">
-          <img class="logo" src="./b2bpaperfiles/media/logo.png">
-        </div>
-        <li>
-          <b>B2Bcoin</b>
-        </li>
-      </ul>
+        <ul>
+            <div class="logo">
+                <img class="logo" src="/media/logo.png">
+            </div>
+            <li>
+                <b>B2Bcoin</b>
+            </li>
+        </ul>
     </div>
-  </div>
-  <div class="buttons">
+</div>
+<div class="buttons">
     <button type="button" onclick="js:genwallet(null)">Generate new</button>
     <button type="button" onclick="window.print()">Print</button>
     <select onchange="$('#theme-image').attr('src', this.options[this.selectedIndex].value);">
-      <option value="./b2bpaperfiles/themes/themeB2Bstandard.png" selected>B2B Standard</option>
-      <option value="./b2bpaperfiles/themes/themeB2Blight.png">B2B Light</option>
+        <option value="/themes/themeB2Bstandard.png" selected>B2B Standard</option>
+        <option value="/themes/themeB2Blight.png">B2B Light</option>
     </select>
-  </div>
-  <div class="instruction">
-    <img id="instr" src="./b2bpaperfiles/media/instructions.png">
-  </div>
+</div>
+<div class="instruction">
+    <img id="instr" src="/media/instructions.png">
+</div>
 
-  <script src="./b2bpaperfiles/js/qrcode.js"></script>
-	<script type="text/javascript" src="./b2bpaperfiles/js/iframe-buster.js"></script>
-	<script type="text/javascript" src="./b2bpaperfiles/js/crypto_utils.js"></script>
-	<script type="text/javascript" src="./b2bpaperfiles/js/wallet.js"></script>
+<script src="/js/qrcode.js"></script>
+<script type="text/javascript" src="/js/iframe-buster.js"></script>
+<script type="text/javascript" src="/js/crypto_utils.js"></script>
+<script type="text/javascript" src="/js/wallet.js"></script>
 
 <footer>
-  <div class="b2blinks">
-    <a href="https://bitcointalk.org/index.php?topic=2098163.0" class="fas fa-comments fa-3x" style="text-decoration:none" target="_blank" title="BitcoinTalk"></a>
-    <a href="https://t.me/joinchat/Fxlb2Qw8ivAta7iYgM0Wiw" class="fab fa-telegram fa-3x" style="text-decoration:none" target="_blank" title="Telegram"></a>
-    <a href="https://discordapp.com/invite/QwhhqPY" class="fab fa-discord fa-3x" style="text-decoration:none" target="_blank" title="Discord"></a>
-    <a href="https://twitter.com/CoinB2B" class="fab fa-twitter fa-3x" style="text-decoration:none" target="_blank" title="Twitter"></a>
-    <a href="https://www.facebook.com/b2beyond/" class="fab fa-facebook fa-3x" style="text-decoration:none" target="_blank" title="Facebook"></a>
-  </div>
-  <p>
-    B2Bcoin Paper Wallet v2.0.1
-  </p>
+    <div class="b2blinks">
+        <a href="https://bitcointalk.org/index.php?topic=2098163.0" class="fas fa-comments fa-3x"
+           style="text-decoration:none" target="_blank" title="BitcoinTalk"></a>
+        <a href="https://t.me/joinchat/Fxlb2Qw8ivAta7iYgM0Wiw" class="fab fa-telegram fa-3x"
+           style="text-decoration:none" target="_blank" title="Telegram"></a>
+        <a href="https://discordapp.com/invite/QwhhqPY" class="fab fa-discord fa-3x" style="text-decoration:none"
+           target="_blank" title="Discord"></a>
+        <a href="https://twitter.com/CoinB2B" class="fab fa-twitter fa-3x" style="text-decoration:none" target="_blank"
+           title="Twitter"></a>
+        <a href="https://www.facebook.com/b2beyond/" class="fab fa-facebook fa-3x" style="text-decoration:none"
+           target="_blank" title="Facebook"></a>
+    </div>
+    <p>
+        B2Bcoin Paper Wallet v2.0.1
+    </p>
 </footer>
 </body>
 </html>

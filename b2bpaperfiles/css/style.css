@@ -35,7 +35,7 @@ body {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   font-size: 13px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   line-height:110%;
   word-wrap: break-word;
 }
@@ -57,7 +57,7 @@ body {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   font-size: 11px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   line-height:120%;
   word-wrap: break-word;
 }

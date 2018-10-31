@@ -1,3 +1,6 @@
+Release notes 2.0.4 - (31-Oct-2018)
+- Added B2B Halloween theme
+
 Release notes 2.0.3 - (23-Oct-2018)
 - Small fixes
 

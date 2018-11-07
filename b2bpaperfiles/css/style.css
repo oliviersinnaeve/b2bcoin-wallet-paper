@@ -206,6 +206,31 @@ body {
   height: 60px;
 }
 
+textarea {
+  background: none;
+  border: none;
+  overflow: hidden !important;
+  outline: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  resize: none !important; /*remove the resize handle on the bottom right*/
+}
+
+.notesText {
+  position: absolute;
+  width:252px;
+  height:127px;
+  margin:0px;
+  padding:0px;
+  top: 262px;
+  left: 707px;
+  font-size: 15px;
+  line-height:19px;
+}
+
 .qr-cli {
   position: absolute;
   top: 42px;
@@ -276,6 +301,16 @@ footer {
 .themeDropdown {
   color:#086788 !important;
 }
+::placeholder {
+  color: #0868888a;
+  opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: transparent;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: transparent;
+}
 @media print {
   body {
     background-image: none;
@@ -289,6 +324,16 @@ footer {
   }
   .wallet, .instruction {
     margin-left:12px;
+  }
+  ::placeholder {
+    color: transparent;
+    opacity: 1; /* Firefox */
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: transparent;
+  }
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: transparent;
   }
 
 }

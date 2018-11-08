@@ -306,21 +306,17 @@ footer {
   opacity: 1; /* Firefox */
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: transparent;
+  color: #0868888a;
 }
 ::-ms-input-placeholder { /* Microsoft Edge */
-  color: transparent;
+  color: #0868888a;
 }
 @media print {
   body {
     background-image: none;
-    height: 650px;
-    -ms-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
   }
-  .buttons, .b2blinks {
-    display: none;
+  .noprint { 
+    display: none; 
   }
   .wallet, .instruction {
     margin-left:12px;

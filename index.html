@@ -15,11 +15,11 @@
 </head>
 <body onload="js:genwallet(null)">
   <div class="wallet">
-    <img id="theme-image" src="b2bpaperfiles/themes/themeB2Bstandard.png">
-    <div id="gui-text" class="gui-text">GUI key</div>
+    <img id="theme-image" class="text-print-hide" src="b2bpaperfiles/themes/themeB2Bstandard.png">
+    <div id="gui-text" class="gui-text text-print-hide">GUI key</div>
         <div class="mnemonic-text" id="mnemonic_widget"></div>
-    <div id="cli-text" class="cli-text">CLI key</div>
-    <div id="instruction-text" class="instruction-text">
+    <div id="cli-text" class="cli-text text-print-hide">CLI key</div>
+    <div id="instruction-text" class="instruction-text text-print-hide">
       <ul>
         <li>
           <b>DO NOT REVEAL THE KEYS</b> until you are ready to import the balance of this wallet to a B2Bcoin GUI or CLI wallet.
@@ -47,9 +47,10 @@
       </ul>
     </div>
   </div>
-  <div class="buttons">
+  <div class="buttons noprint">
     <button type="button" onclick="js:genwallet(null)">Generate new</button>
-    <button type="button" onclick="window.print()">Print</button>
+    <button type="button" onclick="walletPrint()">Print Paper Wallet</button>
+    <button type="button" onclick="textPrint()">Print As Text</button>
     <select class="themeDropdown" onchange="getTheme(this)">
       <option value="standard" selected>B2B Standard</option>
       <option value="light">B2B Light</option>
@@ -57,7 +58,7 @@
       <option value="halloween">B2B Halloween</option>
     </select>
   </div>
-  <div class="instruction">
+  <div class="instruction text-print-hide">
     <img src="b2bpaperfiles/media/instructions.png">
   </div>
 
@@ -67,16 +68,17 @@
 	<script type="text/javascript" src="b2bpaperfiles/js/wallet.js"></script>
   <script type="text/javascript" src="b2bpaperfiles/js/themes.js"></script>
 <footer>
-  <div class="b2blinks">
+  <div class="b2blinks noprint">
     <a href="https://bitcointalk.org/index.php?topic=2098163.0" class="fas fa-comments fa-3x" style="text-decoration:none" target="_blank" title="BitcoinTalk"></a>
     <a href="https://t.me/joinchat/Fxlb2Qw8ivAta7iYgM0Wiw" class="fab fa-telegram fa-3x" style="text-decoration:none" target="_blank" title="Telegram"></a>
     <a href="https://discordapp.com/invite/QwhhqPY" class="fab fa-discord fa-3x" style="text-decoration:none" target="_blank" title="Discord"></a>
     <a href="https://twitter.com/CoinB2B" class="fab fa-twitter fa-3x" style="text-decoration:none" target="_blank" title="Twitter"></a>
     <a href="https://www.facebook.com/b2beyond/" class="fab fa-facebook fa-3x" style="text-decoration:none" target="_blank" title="Facebook"></a>
   </div>
-  <p>
-    B2Bcoin Paper Wallet v2.0.5
+  <p class="text-print-hide">
+    B2Bcoin Paper Wallet v2.0.6
   </p>
 </footer>
+<style type="text/css" media="print" id="print"></style>
 </body>
 </html>

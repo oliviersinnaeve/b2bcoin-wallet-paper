@@ -37,7 +37,7 @@ var genwallet = function(lang) {
   address_widget.innerHTML = keys.public_addr;
   //mnemonic_widget.innerHTML = mnemonic;
   gui_key_widget.innerHTML = keys.spend.pub + keys.view.pub + keys.spend.sec + keys.view.sec;
-  cli_key_widget.innerHTML = "Secret Spend Key: " + keys.spend.sec + "\n\nSecret View Key: " + keys.view.sec;
+  cli_key_widget.innerHTML = "Secret Spend Key: \n" + keys.spend.sec + "\n\nSecret View Key: \n" + keys.view.sec;
 
   var typeNumber = 0;
   var errorCorrectionLevel = 'L';

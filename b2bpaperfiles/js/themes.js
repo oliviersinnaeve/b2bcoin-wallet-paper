@@ -12,6 +12,33 @@ $(document).ready(function () {
     });
 });
 
+function addNewlines(str) {
+  var result = '';
+  while (str.length > 0) {
+    result += str.substring(0, 64) + '\n';
+    str = str.substring(64);
+  }
+  return result;
+};
+
+function textPrint() {
+  var guiKey = $('#gui_key_widget').text();
+  var newStyleGUI = addNewlines(guiKey);
+  $('#gui_key_widget').text(newStyleGUI);
+  var printStyle = $('#print');
+  var stylePrint = 'body { height: 100%; -ms-transform: none; -webkit-transform: none; transform: none; } .text-print-hide { display: none; } .wallet { border: none; } .qr-gui img, .qr-cli img, .qr-address img, .gui_key_widget, .cli_key_widget, .address-text-big, .address_widget, .gui-text-big, .cli-text-big, .gui-text, .cli-text { -ms-transform: none; -webkit-transform: none; transform: none; } .logo-text { top: -45px; left: 700px; } .cli_key_widget { top: 300px; left: 0px; width: 100%; font-weight: bold; } .gui_key_widget { top: 1200px; left: 0px; width: 100%; white-space: pre-line; font-size: 18px; font-weight: bold;} .gui-text-big { top:1092px; left: 0px; color: #000000; } .qr-gui { top: 1050px; left: 150px; } .cli-text-big { top: 742px; left: 0px; color: #000000; } .qr-cli { top: 700px; left: 150px; } .cli_key_widget { top: 850px; left: 0px; font-size: 18px; } .address_widget { top: 120px; left: 0px; width:100%; font-weight: bold; } .address-text-big { top: 25px; left: -20px; color: #000000; } .qr-address { right: 750px; top: 5px;}';
+  printStyle.text(stylePrint);
+  window.print();
+  $('#gui_key_widget').text(guiKey);
+};
+
+function walletPrint() {
+  var printStyle = $('#print');
+  var stylePrint = 'body { height: 650px; -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); } .wallet { border: 1px dotted #000000; } .gui_key_widget, .cli_key_widget, .qr-address img, .address_widget, .address-text-big, .gui-text-big, .cli-text-big { -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); }';
+  printStyle.text(stylePrint);
+  window.print();
+};
+
 function getTheme(selectObject) {
   var selectedTheme = selectObject.value;
 

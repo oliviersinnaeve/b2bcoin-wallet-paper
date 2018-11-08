@@ -313,6 +313,7 @@ footer {
 }
 @media print {
   body {
+    -webkit-print-color-adjust: exact;
     background-image: none;
   }
   .noprint { 
